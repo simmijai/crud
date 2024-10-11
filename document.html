@@ -1,0 +1,14 @@
+var Row = 10;
+var count = select COUNT(id) from data;
+
+page = count/row
+pages = math.ceil(page)
+
+n=1;
+while(n<=pages):
+start = (10*n - 9);
+end = (10*n + 1)
+page =  (offset(start),end);
+n++
+
+
